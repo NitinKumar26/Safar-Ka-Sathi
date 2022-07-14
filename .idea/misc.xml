@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/drawable/border_1.xml" value="0.3828125" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/drawable/border_2.xml" value="0.1355" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/drawable/border_4.xml" value="0.3828125" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/drawable/border_5.xml" value="0.3402777777777778" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/drawable/border_blue.xml" value="0.3828125" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/drawable/border_empty.xml" value="0.39479166666666665" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/drawable/button_2.xml" value="0.3402777777777778" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/drawable/button_style_blue.xml" value="0.36770833333333336" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/drawable/custom_progressbar.xml" value="0.3828125" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/drawable/ic_android.xml" value="0.3828125" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout-land/activity_otp_validate.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout-land/activity_register.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout-land/activity_send_otp.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout-small/activity_send_otp.xml" value="0.8243559718969555" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/activity_create_trip.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/activity_create_vehicle.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/activity_drawer_layout.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/activity_layout_42.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/activity_otp_validate.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/activity_send_otp.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/activity_task.xml" value="0.2" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/activity_task_detail.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/activity_trip_requests.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/activity_upload_document.xml" value="0.2" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/activity_upload_task.xml" value="0.16" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/dialog_progress.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/fragment_earn.xml" value="0.18" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/fragment_history.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/fragment_wallet.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/item_simple.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/item_task_detail.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/item_trip_detail_1.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/sheet_layout_10.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/sheet_layout_15.xml" value="0.2" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/sheet_layout_18.xml" value="0.18" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/sheet_layout_26.xml" value="0.2" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/sheet_layout_29.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/sheet_layout_30.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/sheet_layout_34.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/sheet_layout_37.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/sheet_layout_39.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/sheet_layout_document_driver.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/sheet_layout_unlock_action.xml" value="0.2" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/sheet_layout_unlock_trip.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/shimmer_earn_fragment.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/task_upload_accept_status.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/task_upload_pending_status.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/layout/task_upload_reject_temp.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProjects/safar-ka-sathi-kotlin/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.37864583333333335" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

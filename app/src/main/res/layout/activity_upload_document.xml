@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="?android:attr/colorBackground"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/homeIcon"
+                android:layout_marginStart="2dp"
+                android:layout_width="50dp"
+                android:layout_gravity="center|end"
+                android:padding="12dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/icon_7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center|start"
+                android:layout_marginTop="-1dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/museo700_regular"
+                android:textSize="26sp"
+                android:text="Upload Documents"
+                android:textStyle="bold"
+                android:textColor="?android:attr/textColorPrimary">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <androidx.cardview.widget.CardView
+              app:cardCornerRadius="5dp"
+              android:layout_margin="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <LinearLayout
+                  android:layout_margin="20dp"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+                  <ImageView
+                      android:id="@+id/imageView6"
+                      android:layout_width="60dp"
+                      android:layout_marginTop="20dp"
+                      android:layout_gravity="center"
+                      android:layout_height="60dp"
+                      android:layout_weight="1"
+                      app:srcCompat="@drawable/thumb_1" />
+
+                  <TextView
+                      android:fontFamily="@font/museo700_regular"
+                      android:gravity="center"
+                      android:textSize="26sp"
+                      android:layout_marginTop="50dp"
+                      android:id="@+id/textView18"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="Driving License"
+                      android:textColor="?android:attr/textColorPrimary" />
+
+                  <TextView
+                      android:fontFamily="@font/opensans_regular"
+                      android:gravity="center"
+                      android:textSize="14sp"
+                      android:layout_marginTop="10dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="Your driving license should include your photo along with the card"
+                      android:textColor="?android:attr/textColorSecondary" />
+
+                  <FrameLayout
+                      android:background="@drawable/border_1"
+                      android:layout_marginTop="20dp"
+                      android:padding="10dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:layout_weight="1">
+
+                      <EditText
+                          android:id="@+id/dlNumber"
+                          android:layout_gravity="center"
+                          android:layout_width="match_parent"
+                          android:text=""
+                          android:layout_height="wrap_content"
+                          android:ellipsize="end"
+                          android:singleLine="true"
+                          android:background="@color/transparent"
+                          android:hint="Enter driving license number"
+                          android:textColor="?android:attr/textColorSecondary" />
+
+                  </FrameLayout>
+
+                  <ViewSwitcher
+                      android:id="@+id/switcherDL"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+                      <LinearLayout
+                          android:id="@+id/uploadDL"
+                          android:orientation="horizontal"
+                          android:background="@drawable/border_4"
+                          android:layout_marginTop="20dp"
+                          android:padding="10dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="60dp">
+
+                          <ImageView
+                              android:layout_marginStart="2dp"
+                              android:layout_width="50dp"
+                              android:layout_gravity="center|start"
+                              android:padding="12dp"
+                              android:layout_height="50dp"
+                              app:srcCompat="@drawable/icon_9" />
+
+                          <TextView
+                              android:fontFamily="@font/museo700_regular"
+                              android:textSize="20sp"
+                              android:textColor="@color/color_link_1"
+                              android:layout_gravity="center|start"
+                              android:layout_width="0dp"
+                              android:layout_marginStart="5dp"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:text="Upload driving license" />
+
+                      </LinearLayout>
+
+                      <LinearLayout
+                          android:orientation="horizontal"
+                          android:background="@drawable/border_1"
+                          android:layout_marginTop="20dp"
+                          android:padding="10dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="60dp">
+
+                          <TextView
+                              android:id="@+id/dlText"
+                              android:fontFamily="@font/museo700_regular"
+                              android:textSize="20sp"
+                              android:textColor="@color/color_link_1"
+                              android:layout_gravity="center|start"
+                              android:layout_width="0dp"
+                              android:layout_marginStart="5dp"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:text="license.jpeg" />
+
+                          <ImageView
+                              android:id="@+id/removeDL"
+                              android:layout_marginStart="2dp"
+                              android:layout_width="50dp"
+                              android:layout_gravity="center|start"
+                              android:padding="12dp"
+                              android:layout_height="50dp"
+                              app:srcCompat="@drawable/icon_10" />
+
+                      </LinearLayout>
+
+                  </ViewSwitcher>
+
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="5dp"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/thumb_1" />
+
+                    <TextView
+                        android:fontFamily="@font/museo700_regular"
+                        android:gravity="center"
+                        android:textSize="26sp"
+                        android:layout_marginTop="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Aadhar Card"
+                        android:textColor="?android:attr/textColorPrimary" />
+
+                    <TextView
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Your driving license should include your photo along with the card"
+                        android:textColor="?android:attr/textColorSecondary" />
+
+                    <FrameLayout
+                        android:background="@drawable/border_1"
+                        android:layout_marginTop="20dp"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/aadharNumber"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:maxLength="12"
+                            android:background="@color/transparent"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:inputType="number"
+                            android:hint="Enter 12 Digit Aadhar number"
+                            android:textColor="?android:attr/textColorPrimary"
+                            android:textColorHint="?android:attr/textColorSecondary" />
+
+                    </FrameLayout>
+
+                    <ViewSwitcher
+                        android:id="@+id/switcherAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/uploadAC"
+                            android:orientation="horizontal"
+                            android:background="@drawable/border_4"
+                            android:layout_marginTop="20dp"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp">
+
+                            <ImageView
+                                android:layout_marginStart="2dp"
+                                android:layout_width="50dp"
+                                android:layout_gravity="center|start"
+                                android:padding="12dp"
+                                android:layout_height="50dp"
+                                app:srcCompat="@drawable/icon_9" />
+
+                            <TextView
+                                android:fontFamily="@font/museo700_regular"
+                                android:textSize="20sp"
+                                android:textColor="@color/color_link_1"
+                                android:layout_gravity="center|start"
+                                android:layout_width="0dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Upload your Aadhar" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:background="@drawable/border_1"
+                            android:layout_marginTop="20dp"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp">
+
+                            <TextView
+                                android:id="@+id/acText"
+                                android:fontFamily="@font/museo700_regular"
+                                android:textSize="20sp"
+                                android:textColor="@color/color_link_1"
+                                android:layout_gravity="center|start"
+                                android:layout_width="0dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="license.jpeg" />
+
+                            <ImageView
+                                android:id="@+id/removeAC"
+                                android:layout_marginStart="2dp"
+                                android:layout_width="50dp"
+                                android:layout_gravity="center|start"
+                                android:padding="12dp"
+                                android:layout_height="50dp"
+                                app:srcCompat="@drawable/icon_10" />
+
+                        </LinearLayout>
+
+                    </ViewSwitcher>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="100dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:paddingLeft="70dp"
+                android:fontFamily="@font/museo700_regular"
+                android:paddingRight="70dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:backgroundTint="@color/btn_blue_tint"
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

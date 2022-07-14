@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/colorBackground"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/museo700_regular"
+        android:gravity="center"
+        tools:text="Future Generali Insurance"
+        android:textSize="26sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/opensans_regular"
+        android:gravity="center"
+        tools:text="We need to determine the heath of the vehicle to provide complimentary insurance"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/thumb_1" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/museo300_regular"
+        android:gravity="center"
+        tools:text="Earn 600 Points"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/opensans_regular"
+        android:gravity="center"
+        tools:text="3 tasks to complete"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:elevation="2dp"
+            android:fontFamily="@font/museo700_regular"
+            android:text="Reject"
+            android:textAllCaps="false"
+            android:textColor="@color/text_reject"
+            android:textSize="18sp"
+            android:backgroundTint="@color/btn_reject"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="2dp"
+            android:fontFamily="@font/museo700_regular"
+            android:text="Accept"
+            android:textAllCaps="false"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/text_accept"
+            android:textSize="18sp"
+            android:backgroundTint="@color/btn_accept"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

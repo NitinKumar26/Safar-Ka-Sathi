@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d12a52</color>
+    <color name="colorPrimaryDark">#d12a52</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="background_otp_validate">@color/colorPrimary</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#33000000</color>
+    <color name="gray_dark">#333333</color>
+
+    <color name="colorGrey">#dddddd</color>
+    <color name="colorGreyDark">#ababab</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="cream">#f1f3f6</color>
+    <color name="tab_color_1">#E3F100</color>
+    <color name="tab_color">#E3F100</color>
+    <color name="tab_background_1">#282828</color>
+    <color name="background_1">#40A278</color>
+    <color name="background_2">#ed3d66</color>
+    <color name="color_link_1">#1979a9</color>
+    <color name="card_green">#40A278</color>
+
+    <color name="text_red">#d12a52</color>
+    <color name="blue_1">#1D5D8C</color>
+
+    <color name="color_text_1">#1979a9</color>
+    <color name="yellow_1">#D6DF46</color>
+    <color name="border_1">#F1F3F6</color>
+
+    <color name="splash_color">#d12a52</color>
+    <color name="background_color_1">#ed3d66</color>
+
+    <color name="progress_secondary">#E3F100</color>
+    <color name="progress_primary">#D6DF46</color>
+    <color name="progress_accent">#D6DF46</color>
+    <color name="page_color">#f1f3f6</color>
+
+    <color name="colorPrimaryText">#ffffff</color>
+    <color name="colorSecondaryText">#333333</color>
+
+    <color name="colorPrimaryBlue">#1979a9</color>
+
+    <color name="color_blue">#1E669B</color>
+
+    <color name="btn_blue_tint">#1E669B</color>
+
+    <color name="btn_reject">#ffffff</color>
+
+    <color name="text_reject">#1979a9</color>
+
+    <color name="btn_accept">#1E669B</color>
+
+    <color name="text_accept">#fff</color>
+
+
+</resources>

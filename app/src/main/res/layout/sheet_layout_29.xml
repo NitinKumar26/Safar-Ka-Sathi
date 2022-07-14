@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="?android:attr/colorBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/thumb_1" />
+
+            <TextView
+                android:fontFamily="@font/museo700_regular"
+                android:gravity="center"
+                android:textSize="26sp"
+                android:layout_marginTop="50dp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Select Date and Time" />
+
+            <FrameLayout
+                android:background="@drawable/border_1"
+                android:layout_marginTop="50dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/editText3"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center|start"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="18sp"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    tools:text="Thu, Aug 13"
+                    android:fontFamily="@font/opensans_bold"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:background="@drawable/border_1"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:gravity="center|start"
+                    android:textSize="18sp"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    tools:text="3:00 PM"
+                    android:fontFamily="@font/opensans_bold"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/text_accept"
+            android:elevation="2dp"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:paddingLeft="70dp"
+            android:fontFamily="@font/museo700_regular"
+            android:paddingRight="70dp"
+            android:id="@+id/button"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:backgroundTint="@color/btn_accept"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

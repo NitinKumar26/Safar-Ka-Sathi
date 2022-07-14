@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Safar Ka Sathi</string>
+
+
+    <string name="label_earn">Earn</string>
+    <string name="label_wallet">Wallet</string>
+    <string name="label_history">History</string>
+
+    <string name="mapbox_access_token">sk.eyJ1IjoiZ3Jhdml0eWxvZnRpbmRpYSIsImEiOiJja251OG15NTAwYWs3Mm9vY2gwdzFrcjh0In0.mkhawNpA3MPiu3Ji0Ru1iQ</string>
+    <string name="PREF_BEARER_TOKEN">BEARER_TOKEN</string>
+
+
+    <string name="SEND_OTP_INVALID_NUMBER">Invalid mobile number entered.</string>
+    <string name="INVALID_OTP">Invalid otp entered.</string>
+    <string name="API_ERROR_MESSAGE">Something went wrong with API.</string>
+    <string name="API_BASE_URL">https://www.gravityloft.com/</string>
+
+    <string name="FORM_ENTER_FULL_NAME">Invalid full name entered.</string>
+    <string name="FORM_CHECK_TERM_CONDITION">Please accept term and conditions.</string>
+    <string name="INVALID_LAST_DIGIT_VEHICLE_NUMBER">You\'ve enter last 4 digit wrong of vehicle number.</string>
+    <string name="license_number_empty">please enter valid license number</string>
+    <string name="license_document_empty">please select valid license image</string>
+    <string name="aadhar_number_empty">please enter correct Aadhar number</string>
+    <string name="aadhar_document_empty">please upload valid aadhar image</string>
+    <string name="write_storage_permission">please allow storage permission</string>
+    <string name="accept_terms_and_conditions">Accept <font color="#1979a9">Terms and Conditions</font></string>
+
+</resources>

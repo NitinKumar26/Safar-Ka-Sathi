@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/avatarPicker"
+            android:layout_marginTop="20dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/avatarImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dummy"
+                app:riv_border_color="@color/gray"
+                app:riv_border_width="1px"
+                app:riv_corner_radius="30dip"
+                app:riv_mutate_background="true"
+                app:riv_oval="true" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="40dp"
+                android:layout_gravity="top|end"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/edit" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/nameProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/museo700_regular"
+            android:singleLine="true"
+            tools:text="Ajay Agnihotri"
+            android:textStyle="bold"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/mobileProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensans_regular"
+            tools:text="+91 9076456789"
+            android:textColor="?android:attr/textColorPrimary"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="0dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center|start"
+                app:srcCompat="@drawable/start1" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_marginStart="30dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center|start"
+                app:srcCompat="@drawable/start1" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_marginStart="60dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center|start"
+                app:srcCompat="@drawable/start2" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_marginStart="90dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center|start"
+                app:srcCompat="@drawable/start3"
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_marginStart="120dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center|start"
+                app:srcCompat="@drawable/start3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:fontFamily="@font/museo700_regular"
+                android:background="@drawable/border_2"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="160dp"
+                android:text="2.3"
+                android:textSize="16sp"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="10dp"
+            android:paddingStart="0dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center|start"
+                app:srcCompat="@drawable/addressloc"
+                />
+
+            <TextView
+                android:id="@+id/address_text"
+                android:layout_width="wrap_content"
+                android:textColor="?android:attr/textColorPrimary"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="30dp"
+                android:text="1st floor, Above Pashankar Auto, J.M. Chawl, Jangali Maharaj Rd, Pune, Maharashtra 411005"
+                android:fontFamily="@font/opensans_regular"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:paddingEnd="10dp"
+            android:paddingStart="0dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center|start"
+                app:srcCompat="@drawable/call" />
+
+            <TextView
+                android:id="@+id/phone_text_2"
+                android:layout_width="wrap_content"
+                android:textColor="?android:attr/textColorPrimary"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="30dp"
+                android:text="+91 838123891"
+                android:fontFamily="@font/opensans_regular" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/gray"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:paddingEnd="10dp"
+            android:paddingStart="0dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center|start"
+                app:srcCompat="@drawable/subject" />
+
+            <TextView
+                android:fontFamily="@font/opensans_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?android:attr/textColorPrimary"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="30dp"
+                android:text="English"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:paddingEnd="10dp"
+            android:paddingStart="0dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center|start"
+                app:srcCompat="@drawable/question" />
+
+            <TextView
+                android:fontFamily="@font/opensans_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="30dp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:text="Frequently Asked Questions"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:paddingEnd="10dp"
+            android:paddingStart="0dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:fontFamily="@font/opensans_regular"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center|start"
+                app:srcCompat="@drawable/writeus"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="30dp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:text="Write to Us"
+                android:fontFamily="@font/opensans_regular"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/logoutText"
+        android:layout_width="wrap_content"
+        android:textSize="26sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center|bottom"
+        android:fontFamily="@font/museo700_regular"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        />
+
+    <TextView
+        android:id="@+id/textVersion"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:fontFamily="@font/museo300_regular"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:text="App versions: 3.12"
+        android:textSize="16sp" />
+
+</FrameLayout>

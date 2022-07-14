@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_otp_validate">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:background="?android:attr/colorBackground">
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/banner_5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/banner_5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:background="@drawable/banner_4"
+        android:layout_width="match_parent"
+        android:layout_gravity="top"
+        android:layout_height="40dp"/>
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:paddingTop="80dp"
+        android:paddingBottom="80dp"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+        android:background="@drawable/banner_3"
+        android:layout_height="500dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="?android:attr/colorBackground">
+
+            <TextView
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="28sp"
+                android:fontFamily="@font/museo700_regular"
+                android:id="@+id/textView6"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter OTP"
+                />
+
+            <TextView
+                android:id="@+id/phoneText"
+                android:fontFamily="@font/opensans_semibold"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="?android:attr/textColorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OTP Sent to +91 " />
+
+            <in.aabhasjindal.otptextview.OtpTextView
+                android:id="@+id/otp_view"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:box_margin="5dp"
+                app:otp_box_background="@drawable/border_empty"
+                app:height="50dp"
+                app:bar_active_color="@color/transparent"
+                app:bar_inactive_color="@color/transparent"
+                app:width="50dp"
+                app:bar_enabled="true"
+                app:bar_height="2dp"
+                app:length="4"
+                app:otp="****"
+                app:otp_text_size="24dp"
+                android:textColor="?android:attr/textColorPrimary"
+                app:text_typeface="@font/opensans_regular" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:fontFamily="@font/opensans_regular"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OTP valid for " />
+
+                <TextView
+                    android:id="@+id/tv_time_remaining"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:fontFamily="@font/opensans_regular"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01:30"
+                    />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="50dp"
+                android:id="@+id/submitButton"
+                android:fontFamily="@font/museo700_regular"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorPrimaryText"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verify"
+                android:backgroundTint="@color/btn_blue_tint" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ViewSwitcher
+        android:id="@+id/swicherTask"
+        android:layout_width="match_parent"
+        android:measureAllChildren="false"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:padding="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iconStatus"
+                    android:layout_width="30dp"
+                    android:src="@drawable/icon_4"
+                    android:layout_height="30dp">
+
+                </ImageView>
+
+                <LinearLayout
+                    android:id="@+id/tasktitle"
+                    android:layout_marginStart="40dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/taskTitle"
+                        tools:text="Biwandi"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:textSize="20sp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/museo700_regular"
+                        android:singleLine="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/taskPoints"
+                        android:layout_marginStart="30dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/museo700_regular"
+                        android:singleLine="true"
+                        android:textSize="20sp"
+                        android:gravity="end"
+                        android:layout_gravity="end"
+                        tools:text="50pt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?android:attr/textColorPrimary"
+                        />
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="@color/card_green"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:padding="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iconStatusSecond"
+                    android:layout_width="30dp"
+                    android:src="@drawable/icon_4"
+                    android:layout_height="30dp"/>
+
+                <LinearLayout
+                    android:layout_marginStart="40dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tasktitleExpand"
+                        android:text="Biwandi"
+                        android:textSize="20sp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/museo700_regular"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/taskPointsExpand"
+                        android:layout_marginStart="30dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/museo700_regular"
+                        android:singleLine="true"
+                        android:textSize="20sp"
+                        android:gravity="end"
+                        android:textColor="@color/white"
+                        android:layout_gravity="end"
+                        android:text="50pt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textDetail1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:lines="2"
+                    android:fontFamily="@font/museo300_regular"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:ellipsize="end"
+                    android:text="A quick and simplified answer is that Lorem Ipsum refers to text that the DTP (Desktop Publishing) industry use as replacemen" />
+
+                <TextView
+                    android:id="@+id/textDetail2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:lines="2"
+                    android:fontFamily="@font/museo300_regular"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:ellipsize="end"
+                    android:text="A quick and simplified"
+                    />
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ViewSwitcher>
+
+</LinearLayout>

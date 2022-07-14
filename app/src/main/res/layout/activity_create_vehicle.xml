@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="?android:attr/colorBackground"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/hom"
+                android:layout_marginStart="2dp"
+                android:layout_width="50dp"
+                android:layout_gravity="center|end"
+                android:padding="12dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/icon_7" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-1dp"
+                android:fontFamily="@font/museo700_regular"
+                android:text="Add Vehicles"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="26sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="5dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="70dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/thumb_1" />
+
+                    <FrameLayout
+                        android:background="@drawable/border_1"
+                        android:layout_marginTop="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/et1"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:paddingStart="20dp"
+                            android:fontFamily="@font/opensans_semibold"
+                            android:layout_height="60dp"
+                            android:gravity="center|start"
+                            android:textSize="20sp"
+                            android:background="@color/transparent"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:hint="Vehicle Number" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/border_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_gravity="end"
+                            android:padding="20dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/drop_1" />
+
+                        <EditText
+                            android:id="@+id/et2"
+                            android:background="@color/transparent"
+                            android:textSize="20sp"
+                            android:paddingStart="20dp"
+                            android:fontFamily="@font/opensans_semibold"
+                            android:layout_marginEnd="60dp"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:gravity="center|start"
+                            android:textColor="?android:attr/textColorPrimary"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Vehicle Type" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_marginTop="60dp"
+                        android:background="@drawable/border_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_gravity="end"
+                            android:padding="20dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/drop_1" />
+
+                        <EditText
+                            android:id="@+id/et3"
+                            android:background="@color/transparent"
+                            android:textSize="20sp"
+                            android:paddingStart="20dp"
+                            android:fontFamily="@font/opensans_semibold"
+                            android:layout_marginEnd="60dp"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:gravity="center|start"
+                            android:textColor="?android:attr/textColorPrimary"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Make" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/border_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_gravity="end"
+                            android:padding="20dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/drop_1" />
+
+                        <EditText
+                            android:id="@+id/et4"
+                            android:background="@color/transparent"
+                            android:textSize="20sp"
+                            android:paddingStart="20dp"
+                            android:fontFamily="@font/opensans_semibold"
+                            android:layout_marginEnd="60dp"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:gravity="center|start"
+                            android:textColor="?android:attr/textColorPrimary"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Model" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/border_1"
+                        android:layout_marginBottom="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_gravity="end"
+                            android:padding="20dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/drop_1" />
+
+                        <EditText
+                            android:id="@+id/et5"
+                            android:background="@color/transparent"
+                            android:textSize="20sp"
+                            android:paddingStart="20dp"
+                            android:fontFamily="@font/opensans_semibold"
+                            android:layout_marginEnd="60dp"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:gravity="center|start"
+                            android:textColor="?android:attr/textColorPrimary"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Variant" />
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:layout_marginBottom="30dp"
+                android:paddingLeft="70dp"
+                android:fontFamily="@font/museo700_regular"
+                android:paddingRight="70dp"
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:backgroundTint="#1E669B"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

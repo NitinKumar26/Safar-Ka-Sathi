@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorBackground"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/hom"
+                android:layout_marginStart="2dp"
+                android:layout_width="50dp"
+                android:layout_gravity="center|end"
+                android:padding="12dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/icon_7" />
+
+            <TextView
+                android:id="@+id/transpotername"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center|start"
+                android:layout_marginTop="-1dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/museo700_regular"
+                android:textSize="26sp"
+                android:text="Loading..."
+                android:textStyle="bold"
+                android:textColor="?android:attr/textColorPrimary"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="5dp"
+                android:gravity="end"
+                android:layout_gravity="center|end"
+                android:layout_marginTop="-1dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/museo700_regular"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="?android:attr/colorBackground"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+    </FrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/taskProgressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/museo300_regular"
+                    tools:text="0 of 5 Task Complete"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="28sp" />
+
+                <ProgressBar
+                    android:id="@+id/taskProgressBar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="8dp"
+                    android:progress="25"
+                    android:progressDrawable="@drawable/custom_progressbar" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/taskList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+           <androidx.cardview.widget.CardView
+               app:cardCornerRadius="6dp"
+               app:cardBackgroundColor="@color/yellow_1"
+               android:layout_margin="6dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <FrameLayout
+                   android:padding="5dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="60dp">
+
+                   <ImageView
+                       android:id="@+id/imageView6"
+                       android:layout_width="40dp"
+                       android:layout_gravity="center|start"
+                       android:layout_height="40dp"
+                       app:srcCompat="@drawable/icon_5"
+                       />
+
+                   <LinearLayout
+                       android:layout_marginStart="60dp"
+                       android:orientation="vertical"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/museo700_regular"
+                           android:textSize="20sp"
+                           android:text="100 Points Bonus Task"
+                           android:textStyle="bold"
+                           android:textColor="@color/gray_dark" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Complete above tasks to unlock"
+                           android:fontFamily="@font/museo700_regular"
+                           android:textColor="@color/gray_dark" />
+
+                   </LinearLayout>
+
+               </FrameLayout>
+
+           </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

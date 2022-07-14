@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/swipeLayout"
+    android:layout_height="match_parent"
+    android:background="@color/cream">
+
+    <androidx.core.widget.NestedScrollView
+        android:scrollbars="none"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <com.facebook.shimmer.ShimmerFrameLayout
+               android:id="@+id/shimmer"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_gravity="center"
+               android:orientation="vertical"
+               app:shimmer_auto_start="true"
+               tools:visibility="visible">
+
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <FrameLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <FrameLayout
+                           android:layout_marginTop="10dp"
+                           android:elevation="1dp"
+                           android:background="@drawable/bg_3"
+                           android:layout_width="match_parent"
+                           android:outlineProvider="none"
+                           android:layout_height="80dp">
+
+                       </FrameLayout>
+
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="30dp">
+
+                           <androidx.cardview.widget.CardView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_margin="3dp"
+                               app:cardCornerRadius="5dp">
+
+                               <LinearLayout
+                                   android:orientation="vertical"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:layout_marginTop="70dp"
+                                   android:layout_marginBottom="30dp"
+                                   android:paddingLeft="20dp"
+                                   android:paddingRight="20dp">
+
+                                   <View
+                                       android:layout_width="100dp"
+                                       android:layout_height="25dp"
+                                       android:fontFamily="@font/museo700_regular"
+                                       android:text="0 Trip Requests"
+                                       android:textColor="?android:attr/textColorPrimary"
+                                       android:background="@color/colorGrey"
+                                       />
+
+                                   <FrameLayout
+                                       android:layout_marginTop="10dp"
+                                       android:layout_width="match_parent"
+                                       android:background="@color/colorGrey"
+                                       android:layout_height="wrap_content"
+                                       android:orientation="vertical">
+
+                                       <LinearLayout
+                                           android:layout_margin="5dp"
+                                           android:background="@color/colorGrey"
+                                           android:paddingTop="10dp"
+                                           android:orientation="vertical"
+                                           android:paddingRight="10dp"
+                                           android:paddingLeft="10dp"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="match_parent">
+
+                                           <View
+                                               android:layout_width="100dp"
+                                               android:layout_height="25dp"
+                                               android:background="@color/colorGrey"
+                                               />
+
+                                           <View
+                                               android:layout_width="200dp"
+                                               android:layout_height="25dp"
+                                               android:background="@color/colorGrey"
+                                               />
+
+                                       </LinearLayout>
+
+                                   </FrameLayout>
+
+                                   <View
+                                       android:layout_marginTop="30dp"
+                                       android:layout_width="100dp"
+                                       android:layout_height="25dp"
+                                       android:background="@color/colorGrey"
+                                       />
+
+                                   <FrameLayout
+                                       android:layout_marginTop="10dp"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:orientation="vertical">
+
+                                       <LinearLayout
+                                           android:background="@color/colorGrey"
+                                           android:paddingTop="10dp"
+                                           android:orientation="vertical"
+                                           android:paddingRight="10dp"
+                                           android:paddingLeft="10dp"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="match_parent">
+
+                                           <View
+                                               android:layout_width="100dp"
+                                               android:layout_height="25dp"
+                                               android:background="@color/colorGrey"
+                                               />
+
+                                           <View
+                                               android:layout_width="100dp"
+                                               android:layout_height="25dp"
+                                               android:background="@color/colorGrey"
+                                               />
+
+                                           <View
+                                               android:layout_width="100dp"
+                                               android:layout_height="25dp"
+                                               android:background="@color/colorGrey"
+                                               />
+
+                                       </LinearLayout>
+
+                                       <LinearLayout
+                                           android:layout_marginTop="10dp"
+                                           android:layout_marginEnd="10dp"
+                                           android:orientation="vertical"
+                                           android:layout_marginBottom="10dp"
+                                           android:layout_width="50dp"
+                                           android:gravity="center"
+                                           android:layout_height="match_parent"
+                                           android:layout_gravity="end">
+
+                                           <View
+                                               android:layout_width="100dp"
+                                               android:layout_height="25dp"
+                                               android:background="@color/colorGrey"
+                                               />
+
+                                           <View
+                                               android:layout_width="100dp"
+                                               android:layout_height="25dp"
+                                               android:background="@color/colorGrey"
+                                               />
+
+                                       </LinearLayout>
+
+                                   </FrameLayout>
+
+                               </LinearLayout>
+
+                           </androidx.cardview.widget.CardView>
+
+                       </FrameLayout>
+
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="30dp"
+                       android:background="@color/cream">
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="3dp"
+                           app:cardCornerRadius="5dp">
+
+                           <LinearLayout
+                               android:orientation="vertical"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_marginBottom="30dp"
+                               android:paddingLeft="20dp"
+                               android:paddingRight="20dp"
+                               android:layout_marginTop="20dp">
+
+                               <View
+                                   android:layout_width="200dp"
+                                   android:layout_height="30dp"
+                                   android:background="@color/colorGrey"
+                                   android:layout_marginBottom="40dp"
+                                   android:gravity="center"
+                                   android:layout_gravity="center"
+                                   />
+
+                               <View
+                                   android:layout_width="100dp"
+                                   android:layout_height="25dp"
+                                   android:background="@color/colorGrey"
+                                   />
+
+                               <FrameLayout
+                                   android:layout_marginTop="10dp"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="vertical">
+
+                                   <LinearLayout
+                                       android:background="@color/colorGrey"
+                                       android:paddingTop="10dp"
+                                       android:orientation="vertical"
+                                       android:paddingRight="10dp"
+                                       android:paddingLeft="10dp"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent">
+
+                                       <View
+                                           android:layout_width="100dp"
+                                           android:layout_height="25dp"
+                                           android:background="@color/colorGrey"
+                                           />
+
+                                       <View
+                                           android:layout_width="100dp"
+                                           android:layout_height="25dp"
+                                           android:background="@color/colorGrey"
+                                           android:layout_marginBottom="15dp"
+                                           android:layout_marginTop="4dp"
+                                           />
+
+                                   </LinearLayout>
+
+                               </FrameLayout>
+
+                               <View
+                                   android:layout_width="100dp"
+                                   android:layout_height="25dp"
+                                   android:background="@color/colorGrey"
+                                   android:layout_marginTop="30dp"
+                                   />
+
+                               <FrameLayout
+                                   android:layout_marginTop="10dp"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="vertical">
+
+                                   <LinearLayout
+                                       android:background="@color/colorGrey"
+                                       android:paddingTop="10dp"
+                                       android:orientation="vertical"
+                                       android:paddingRight="10dp"
+                                       android:paddingLeft="10dp"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent">
+
+                                       <View
+                                           android:layout_width="100dp"
+                                           android:layout_height="25dp"
+                                           android:background="@color/colorGrey"
+                                           android:layout_marginEnd="60dp"
+                                           />
+
+                                       <View
+                                           android:layout_width="100dp"
+                                           android:layout_height="25dp"
+                                           android:background="@color/colorGrey"
+                                           android:layout_marginEnd="60dp"
+                                           />
+
+                                       <View
+                                           android:layout_width="100dp"
+                                           android:layout_height="25dp"
+                                           android:background="@color/colorGrey"
+                                           android:layout_marginTop="5dp"
+                                           android:layout_marginEnd="60dp"
+                                           android:layout_marginBottom="15dp"
+                                           />
+
+                                   </LinearLayout>
+
+                                   <LinearLayout
+                                       android:layout_marginTop="10dp"
+                                       android:layout_marginEnd="10dp"
+                                       android:orientation="vertical"
+                                       android:layout_marginBottom="10dp"
+                                       android:layout_width="50dp"
+                                       android:gravity="center"
+                                       android:layout_height="match_parent"
+                                       android:layout_gravity="end">
+
+                                       <View
+                                           android:layout_gravity="center|top"
+                                           android:layout_width="100dp"
+                                           android:layout_height="25dp"
+                                           android:background="@color/colorGrey"
+                                           android:layout_marginTop="5dp"
+                                           android:layout_marginEnd="60dp"
+                                           android:layout_marginBottom="15dp"
+                                           />
+
+                                       <View
+                                           android:layout_gravity="center|top"
+                                           android:layout_width="100dp"
+                                           android:layout_height="25dp"
+                                           android:background="@color/colorGrey"
+                                           android:layout_marginTop="5dp"
+                                           android:layout_marginEnd="60dp"
+                                           android:layout_marginBottom="15dp"
+                                           />
+
+                                   </LinearLayout>
+
+                               </FrameLayout>
+
+                           </LinearLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+                   </FrameLayout>
+
+               </LinearLayout>
+
+           </com.facebook.shimmer.ShimmerFrameLayout>
+
+           <LinearLayout
+               android:id="@+id/linear_content"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:visibility="gone"
+               tools:visibility="visible">
+
+               <FrameLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@color/cream">
+
+                   <FrameLayout
+                       android:layout_marginTop="10dp"
+                       android:elevation="1dp"
+                       android:background="@drawable/bg_3"
+                       android:layout_width="match_parent"
+                       android:outlineProvider="none"
+                       android:layout_height="80dp">
+
+                       <TextView
+                           android:id="@+id/tv_reward_points"
+                           android:layout_gravity="center"
+                           android:layout_width="wrap_content"
+                           android:fontFamily="@font/museo700_regular"
+                           android:textColor="@color/colorPrimaryText"
+                           android:textSize="26sp"
+                           android:layout_height="wrap_content"
+                           tools:text="Trips 480 Points"
+                           />
+
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="30dp">
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="3dp"
+                           app:cardCornerRadius="5dp">
+
+                           <LinearLayout
+                               android:orientation="vertical"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_marginTop="70dp"
+                               android:layout_marginBottom="30dp"
+                               android:paddingLeft="20dp"
+                               android:paddingRight="20dp">
+
+                               <TextView
+                                   android:id="@+id/tripCount"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:fontFamily="@font/museo700_regular"
+                                   android:text="0 Trip Requests"
+                                   android:textColor="?android:attr/textColorPrimary"
+                                   android:textSize="20sp" />
+
+                               <FrameLayout
+                                   android:layout_marginTop="10dp"
+                                   android:layout_width="match_parent"
+                                   android:background="@drawable/bg_1"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="vertical">
+
+                                   <LinearLayout
+                                       android:id="@+id/all_trip"
+                                       android:layout_margin="5dp"
+                                       android:background="@drawable/border_2"
+                                       android:paddingTop="10dp"
+                                       android:orientation="vertical"
+                                       android:paddingRight="10dp"
+                                       android:paddingLeft="10dp"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent">
+
+                                       <TextView
+                                           android:id="@+id/overviewTitle"
+                                           android:layout_width="wrap_content"
+                                           android:singleLine="true"
+                                           android:ellipsize="end"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/opensans_bold"
+                                           android:text="(no open trip)"
+                                           android:textColor="@color/colorPrimaryText"
+                                           android:textSize="16sp" />
+
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:singleLine="true"
+                                           android:id="@+id/overviewSummary"
+                                           android:layout_marginBottom="15dp"
+                                           android:ellipsize="end"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/opensans_semibold"
+                                           android:text="new trip appear here as they assigned."
+                                           android:textColor="@color/colorPrimaryText"
+                                           android:textSize="14sp" />
+
+                                   </LinearLayout>
+
+                               </FrameLayout>
+
+                               <TextView
+                                   android:id="@+id/ongoingCount"
+                                   android:layout_marginTop="30dp"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:fontFamily="@font/museo700_regular"
+                                   android:text="0 Ongoing Trips"
+                                   android:textColor="?android:attr/textColorPrimary"
+                                   android:textSize="20sp" />
+
+                               <FrameLayout
+                                   android:id="@+id/ongoingTrip"
+                                   android:layout_marginTop="10dp"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="vertical">
+
+                                   <LinearLayout
+                                       android:background="@drawable/border_2"
+                                       android:paddingTop="10dp"
+                                       android:orientation="vertical"
+                                       android:paddingRight="10dp"
+                                       android:paddingLeft="10dp"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent">
+
+                                       <TextView
+                                           android:id="@+id/ongoingTitle"
+                                           android:layout_width="wrap_content"
+                                           android:layout_marginEnd="60dp"
+                                           android:singleLine="true"
+                                           android:ellipsize="end"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/opensans_bold"
+                                           android:text="No ongoing trips"
+                                           android:textColor="@color/colorPrimaryText"
+                                           android:textSize="16sp" />
+
+                                       <TextView
+                                           android:id="@+id/ongoingSummary"
+                                           android:layout_width="wrap_content"
+                                           android:layout_marginEnd="60dp"
+                                           android:singleLine="true"
+                                           android:ellipsize="end"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/opensans_semibold"
+                                           tools:text="140 of 300 points earned"
+                                           android:text="ongoing trips appear here"
+                                           android:textColor="@color/colorPrimaryText"
+                                           android:textSize="14sp" />
+
+                                       <TextView
+                                           android:layout_marginTop="5dp"
+                                           android:layout_width="wrap_content"
+                                           android:layout_marginEnd="60dp"
+                                           android:singleLine="true"
+                                           android:ellipsize="end"
+                                           android:layout_marginBottom="15dp"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/opensans_semibold"
+                                           tools:text="Next task in 38 Kms"
+                                           android:textColor="@color/colorPrimaryText"
+                                           android:textSize="14sp" />
+
+                                   </LinearLayout>
+
+                                   <LinearLayout
+                                       android:id="@+id/linear_tasks"
+                                       android:layout_marginTop="10dp"
+                                       android:layout_marginEnd="10dp"
+                                       android:orientation="vertical"
+                                       android:layout_marginBottom="10dp"
+                                       android:layout_width="50dp"
+                                       android:gravity="center"
+                                       android:layout_height="match_parent"
+                                       android:layout_gravity="end"
+                                       android:visibility="gone">
+
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:singleLine="true"
+                                           android:layout_gravity="center|top"
+                                           android:ellipsize="end"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/opensans_bold"
+                                           android:text="2"
+                                           android:textColor="@color/colorPrimaryText"
+                                           android:textSize="39sp" />
+
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:singleLine="true"
+                                           android:layout_gravity="center|top"
+                                           android:ellipsize="end"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/opensans_bold"
+                                           android:text="of 5"
+                                           android:textColor="@color/colorPrimaryText"
+                                           android:textSize="17sp" />
+
+                                   </LinearLayout>
+
+                               </FrameLayout>
+
+                           </LinearLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+                   </FrameLayout>
+
+               </FrameLayout>
+
+               <FrameLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="30dp"
+                       android:background="@color/cream">
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="3dp"
+                           app:cardCornerRadius="5dp">
+
+                           <LinearLayout
+                               android:orientation="vertical"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_marginBottom="30dp"
+                               android:paddingLeft="20dp"
+                               android:paddingRight="20dp"
+                               android:layout_marginTop="20dp">
+
+                               <TextView
+                                   android:layout_gravity="center"
+                                   android:layout_width="wrap_content"
+                                   android:fontFamily="@font/opensans_bold"
+                                   android:textColor="@color/blue_1"
+                                   android:textSize="22sp"
+                                   android:layout_height="wrap_content"
+                                   android:text="Campaign 350 Points"
+                                   android:layout_marginBottom="40dp"
+                                   android:gravity="center"
+                                   />
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:fontFamily="@font/museo700_regular"
+                                   android:text="4 Campaign Requests"
+                                   android:textColor="?android:attr/textColorPrimary"
+                                   android:textSize="20sp" />
+
+                               <FrameLayout
+                                   android:layout_marginTop="10dp"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="vertical">
+
+                                   <LinearLayout
+                                       android:background="@drawable/border_3"
+                                       android:paddingTop="10dp"
+                                       android:orientation="vertical"
+                                       android:paddingRight="10dp"
+                                       android:paddingLeft="10dp"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent">
+
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:singleLine="true"
+                                           android:ellipsize="end"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/opensans_bold"
+                                           android:text="CEAT Tyres"
+                                           android:textColor="@color/colorPrimaryText"
+                                           android:textSize="20sp" />
+
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:singleLine="true"
+                                           android:layout_marginBottom="15dp"
+                                           android:ellipsize="end"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/opensans_semibold"
+                                           android:text="Click photos for 5 garages on the highway."
+                                           android:textColor="@color/colorPrimaryText"
+                                           android:textSize="15sp" />
+
+                                   </LinearLayout>
+
+                               </FrameLayout>
+
+                               <TextView
+                                   android:layout_marginTop="30dp"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:fontFamily="@font/museo700_regular"
+                                   android:text="3 Ongoing Campaign"
+                                   android:textColor="?android:attr/textColorPrimary"
+                                   android:textSize="20sp" />
+
+                               <FrameLayout
+                                   android:layout_marginTop="10dp"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="vertical">
+
+                                   <LinearLayout
+                                       android:background="@drawable/border_3"
+                                       android:paddingTop="10dp"
+                                       android:orientation="vertical"
+                                       android:paddingRight="10dp"
+                                       android:paddingLeft="10dp"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent">
+
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:layout_marginEnd="60dp"
+                                           android:singleLine="true"
+                                           android:ellipsize="end"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/opensans_bold"
+                                           android:text="Zoom Cars"
+                                           android:textColor="@color/colorPrimaryText"
+                                           android:textSize="20sp" />
+
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:layout_marginEnd="60dp"
+                                           android:singleLine="true"
+                                           android:ellipsize="end"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/opensans_semibold"
+                                           android:text="Digital KYC by uploading driving"
+                                           android:textColor="@color/colorPrimaryText"
+                                           android:textSize="15sp" />
+
+                                       <TextView
+                                           android:layout_marginTop="5dp"
+                                           android:layout_width="wrap_content"
+                                           android:layout_marginEnd="60dp"
+                                           android:singleLine="true"
+                                           android:ellipsize="end"
+                                           android:layout_marginBottom="15dp"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/opensans_semibold"
+                                           android:text="license and Aadhaar number to..."
+                                           android:textColor="@color/colorPrimaryText"
+                                           android:textSize="15sp" />
+
+                                   </LinearLayout>
+
+                                   <LinearLayout
+                                       android:layout_marginTop="10dp"
+                                       android:layout_marginEnd="10dp"
+                                       android:orientation="vertical"
+                                       android:layout_marginBottom="10dp"
+                                       android:layout_width="50dp"
+                                       android:gravity="center"
+                                       android:layout_height="match_parent"
+                                       android:layout_gravity="end">
+
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:singleLine="true"
+                                           android:layout_gravity="center|top"
+                                           android:ellipsize="end"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/opensans_bold"
+                                           android:text="2"
+                                           android:textColor="@color/colorPrimaryText"
+                                           android:textSize="39sp" />
+
+                                       <TextView
+                                           android:layout_width="wrap_content"
+                                           android:singleLine="true"
+                                           android:layout_gravity="center|top"
+                                           android:ellipsize="end"
+                                           android:layout_height="wrap_content"
+                                           android:fontFamily="@font/opensans_bold"
+                                           android:text="of 5"
+                                           android:textColor="@color/colorPrimaryText"
+                                           android:textSize="17sp" />
+
+                                   </LinearLayout>
+
+                               </FrameLayout>
+
+                           </LinearLayout>
+
+                       </androidx.cardview.widget.CardView>
+
+                   </FrameLayout>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorBackground"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/hom"
+                android:layout_marginStart="2dp"
+                android:layout_width="50dp"
+                android:layout_gravity="center|end"
+                android:padding="12dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/icon_7" />
+
+            <TextView
+                android:id="@+id/titletask"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center|start"
+                android:layout_marginTop="-1dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/museo700_regular"
+                android:textSize="26sp"
+                android:text="Bichhiwara"
+                android:textStyle="bold"
+                android:textColor="?android:attr/textColorPrimary"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <androidx.cardview.widget.CardView
+              app:cardCornerRadius="5dp"
+              android:layout_margin="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <LinearLayout
+                  android:layout_margin="20dp"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+
+                  <ImageView
+                      android:id="@+id/imageView6"
+                      android:layout_width="80dp"
+                      android:layout_marginTop="20dp"
+                      android:layout_gravity="center"
+                      android:layout_height="80dp"
+                      android:layout_weight="1"
+                      app:srcCompat="@drawable/thumb_1" />
+
+                  <TextView
+                      android:id="@+id/taskpoints"
+                      android:fontFamily="@font/museo700_regular"
+                      android:gravity="center"
+                      android:textSize="26sp"
+                      android:layout_marginTop="50dp"
+                      android:textColor="?android:attr/textColorPrimary"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="100 Points Earned" />
+
+                  <TextView
+                      android:fontFamily="@font/opensans_regular"
+                      android:gravity="center"
+                      android:textSize="16sp"
+                      android:layout_marginTop="10dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="Task is approved and points have been added to your wallet."
+                      android:textColor="?android:attr/textColorSecondary"
+                      />
+
+
+                  <com.makeramen.roundedimageview.RoundedImageView
+                      android:id="@+id/uploadImage"
+                      android:scaleType="centerCrop"
+                      app:riv_corner_radius="5dp"
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="20dp"
+                      android:layout_gravity="center"
+                      android:layout_height="200dp"
+                      android:layout_weight="1"
+                      android:src="@drawable/dumm_box"/>
+
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

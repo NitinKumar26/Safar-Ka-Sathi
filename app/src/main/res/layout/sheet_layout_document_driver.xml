@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorBackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/transporterName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/museo700_regular"
+                android:gravity="center"
+                tools:text="Kshirsagar Goods Transport"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/tv_from_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+                tools:text="Bhavani Peth, Palkhi Chowk, Pune, Maharashtra 411042"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="16sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_2"
+                android:minHeight="80dp"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_below="@+id/frame_1"
+                        android:layout_marginStart="10dp"
+                        android:layout_above="@+id/frame_3"
+                        android:layout_height="wrap_content"
+                        android:layout_width="1dp"
+                        android:background="@color/white"/>
+
+                    <FrameLayout
+                        android:id="@+id/frame_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:padding="6dp"
+                            app:srcCompat="@drawable/icon_11" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:alpha="0.5"
+                            android:fontFamily="@font/opensans_bold"
+                            android:gravity="center|start"
+                            android:text="From"
+                            android:textColor="@color/colorPrimaryText"/>
+
+                        <TextView
+                            android:id="@+id/tstartdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:fontFamily="@font/opensans_regular"
+                            tools:text="10th Aug 2020"
+                            android:textColor="@color/colorPrimaryText"/>
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/text_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/frame_1"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="25dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/opensans_bold"
+                        android:singleLine="true"
+                        tools:text="Bhiwandi, Thane, Maharastra"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_1"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="30dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:singleLine="true"
+                        tools:text="2 Pickup Points"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="12sp" />
+
+                    <FrameLayout
+                        android:id="@+id/frame_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_2"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:alpha="0.5"
+                            android:fontFamily="@font/opensans_bold"
+                            android:gravity="center|start"
+                            android:text="To"
+                            android:textColor="@color/colorPrimaryText"/>
+
+                        <TextView
+                            android:id="@+id/enddate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:fontFamily="@font/opensans_regular"
+                            tools:text="12th Aug 2020"
+                            android:textColor="@color/colorPrimaryText"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/frame_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/frame_2"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="25dp"
+                            android:layout_height="24dp"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/icon_12" />
+
+                        <TextView
+                            android:id="@+id/text_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/opensans_bold"
+                            android:singleLine="true"
+                            tools:text="Ubhrat Beach, Surat, Gujarat"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="16sp"
+                            />
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/totalpoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/museo300_regular"
+                android:gravity="center"
+                android:text="Earn 200 Points"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tasks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+                tools:text="4 tasks to complete"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/yellow_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="?android:attr/textColorPrimary"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/opensans_semibold"
+                android:gravity="center"
+                android:text="Documents Required"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+                android:text="To earn points the transporter requires your driving license and Aadhaar Card details."
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addDocs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/museo700_regular"
+                android:text="Add Documents"
+                android:textAllCaps="false"
+                android:textColor="@color/text_accept"
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:backgroundTint="@color/btn_blue_tint" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

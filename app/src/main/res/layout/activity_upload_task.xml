@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorBackground"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/homeIcon"
+                android:layout_marginStart="2dp"
+                android:layout_width="50dp"
+                android:layout_gravity="center|end"
+                android:padding="12dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/icon_7" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center|start"
+                android:layout_marginTop="-1dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/museo700_regular"
+                android:textSize="26sp"
+                android:text="Halol"
+                android:textStyle="bold"
+                android:textColor="?android:attr/textColorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/points"
+                android:layout_width="match_parent"
+                android:layout_marginStart="5dp"
+                android:gravity="end"
+                android:layout_gravity="center|end"
+                android:layout_marginTop="-1dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/museo700_regular"
+                android:textSize="20sp"
+                android:text="100 Pts"
+                android:textStyle="bold"
+                android:textColor="?android:attr/textColorSecondary">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                      android:layout_margin="20dp"
+                      android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+                      <ImageView
+                          android:id="@+id/statusIcon"
+                          android:layout_width="80dp"
+                          android:layout_marginTop="20dp"
+                          android:layout_gravity="center"
+                          android:layout_height="80dp"
+                          android:layout_weight="1"
+                          app:srcCompat="@drawable/thumb_1" />
+
+                      <TextView
+                          android:fontFamily="@font/museo700_regular"
+                          android:gravity="center"
+                          android:textSize="26sp"
+                          android:layout_marginTop="50dp"
+                          android:id="@+id/statusText"
+                          android:layout_width="match_parent"
+                          android:textColor="?android:attr/textColorPrimary"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="Upload Image"
+                          />
+
+                      <TextView
+                          android:fontFamily="@font/opensans_regular"
+                          android:gravity="center"
+                          android:textSize="16sp"
+                          android:layout_marginTop="10dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="Image of goods being loaded in the truck. Image should include vehicle number"
+                          android:textColor="?android:attr/textColorSecondary"
+                          />
+
+                      <TextView
+                          android:id="@+id/tv_location"
+                          android:fontFamily="@font/opensans_regular"
+                          android:textSize="16sp"
+                          android:layout_marginTop="30dp"
+                          android:layout_width="match_parent"
+                          android:textColor="?android:attr/textColorSecondary"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          tools:text="Location: Mazagon Dock Shipbuilders Limited" />
+
+                      <TextView
+                          android:id="@+id/taskText2"
+                          android:fontFamily="@font/opensans_regular"
+                          android:textSize="14sp"
+                          android:textColor="?android:attr/textColorSecondary"
+                          android:layout_marginTop="10dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          tools:text="Distance: 45KMs away"
+                          android:visibility="gone"
+                          tools:visibility="visible"/>
+
+
+                      <ViewSwitcher
+                          android:id="@+id/switcherDL"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+
+                          <LinearLayout
+                              android:id="@+id/uploadProof"
+                              android:layout_width="match_parent"
+                              android:layout_height="60dp"
+                              android:layout_marginTop="20dp"
+                              android:background="@drawable/border_4"
+                              android:orientation="horizontal"
+                              android:padding="10dp">
+
+                              <ImageView
+                                  android:layout_width="50dp"
+                                  android:layout_height="50dp"
+                                  android:layout_gravity="center|start"
+                                  android:layout_marginStart="2dp"
+                                  android:padding="12dp"
+                                  app:srcCompat="@drawable/icon_9" />
+
+
+                              <TextView
+                                  android:id="@+id/uploadtitle"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center|start"
+                                  android:layout_marginStart="5dp"
+                                  android:layout_weight="1"
+                                  android:lines="1"
+                                  android:fontFamily="@font/museo700_regular"
+                                  android:text="Upload driving license"
+                                  android:textColor="@color/color_link_1"
+                                  android:textSize="20sp" />
+
+                          </LinearLayout>
+
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="60dp"
+                              android:layout_marginTop="20dp"
+                              android:background="@drawable/border_1"
+                              android:orientation="horizontal"
+                              android:padding="10dp">
+
+                              <TextView
+                                  android:id="@+id/dlText"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center|start"
+                                  android:layout_marginStart="5dp"
+                                  android:layout_weight="1"
+                                  android:fontFamily="@font/museo700_regular"
+                                  android:text="license.jpeg"
+                                  android:textColor="@color/color_link_1"
+                                  android:textSize="20sp"
+                                  />
+
+                              <ImageView
+                                  android:id="@+id/removeDL"
+                                  android:layout_width="50dp"
+                                  android:layout_height="50dp"
+                                  android:layout_gravity="center|start"
+                                  android:layout_marginStart="2dp"
+                                  android:padding="12dp"
+                                  app:srcCompat="@drawable/icon_10" />
+
+                          </LinearLayout>
+
+                      </ViewSwitcher>
+
+                      <FrameLayout
+                          android:id="@+id/container1"
+                          android:background="@drawable/border_1"
+                          android:layout_marginTop="50dp"
+                          android:padding="10dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="60dp"
+                          android:layout_weight="1">
+
+                          <EditText
+                              android:id="@+id/receivedBy"
+                              android:layout_gravity="center"
+                              android:layout_width="match_parent"
+                              android:layout_height="60dp"
+                              android:lines="1"
+                              android:ellipsize="end"
+                              android:gravity="center|start"
+                              android:textSize="18sp"
+                              android:background="@color/transparent"
+                              android:ems="10"
+                              android:inputType="textPersonName"
+                              android:hint="Received by"
+                              android:textColor="?android:attr/textColorPrimary"
+                              android:textColorHint="?android:attr/textColorSecondary"
+                              />
+
+                      </FrameLayout>
+
+                      <FrameLayout
+                          android:id="@+id/container2"
+                          android:background="@drawable/border_1"
+                          android:layout_marginTop="50dp"
+                          android:padding="10dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="60dp"
+                          android:layout_weight="1">
+
+                          <TextView
+                              android:id="@+id/timeText"
+                              android:layout_gravity="center"
+                              android:layout_width="match_parent"
+                              android:layout_height="60dp"
+                              android:gravity="center|start"
+                              android:textSize="18sp"
+                              android:paddingEnd="50dp"
+                              android:paddingStart="0dp"
+                              android:lines="1"
+                              android:background="@color/transparent"
+                              android:ems="10"
+                              android:inputType="textPersonName"
+                              android:hint="Task end time"
+                              android:textColorHint="?android:attr/textColorSecondary"
+                              android:textColor="?android:attr/textColorPrimary"
+                              />
+
+
+                          <TextView
+                              android:id="@+id/nowTime"
+                              android:fontFamily="@font/museo700_regular"
+                              android:textSize="20sp"
+                              android:textColor="@color/color_link_1"
+                              android:layout_gravity="center|end"
+                              android:layout_width="wrap_content"
+                              android:layout_marginStart="5dp"
+                              android:layout_marginEnd="5dp"
+                              android:layout_height="wrap_content"
+                              android:text="Now" />
+
+
+                      </FrameLayout>
+
+                      <FrameLayout
+                          android:id="@+id/container3"
+                          android:background="@drawable/border_1"
+                          android:layout_marginTop="20dp"
+                          android:padding="10dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="60dp"
+                          android:layout_weight="1">
+
+                          <com.google.android.material.textfield.TextInputEditText
+                              android:id="@+id/locationText"
+                              android:ellipsize="end"
+                              android:layout_gravity="center"
+                              android:layout_width="match_parent"
+                              android:layout_height="60dp"
+                              android:gravity="center|start"
+                              android:paddingEnd="60dp"
+                              android:paddingStart="0dp"
+                              android:maxLines="1"
+                              android:minLines="1"
+                              android:textSize="18sp"
+                              android:background="@color/transparent"
+                              android:ems="10"
+                              android:hint="Location"
+                              android:textColor="?android:attr/textColorPrimary"
+                              android:textColorHint="?android:attr/textColorSecondary"
+                              android:inputType="text"
+                              />
+
+                          <TextView
+                              android:id="@+id/detectLocation"
+                              android:fontFamily="@font/museo700_regular"
+                              android:textSize="20sp"
+                              android:textColor="@color/color_link_1"
+                              android:layout_gravity="center|end"
+                              android:layout_width="wrap_content"
+                              android:layout_marginStart="5dp"
+                              android:layout_marginEnd="5dp"
+                              android:layout_height="wrap_content"
+                              android:text="Detect"
+                              />
+
+                      </FrameLayout>
+
+                  </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/submitButton"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="100dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textAllCaps="false"
+                    android:textSize="22sp"
+                    android:paddingLeft="70dp"
+                    android:fontFamily="@font/museo700_regular"
+                    android:paddingRight="70dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:backgroundTint="@color/btn_blue_tint"
+                    />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

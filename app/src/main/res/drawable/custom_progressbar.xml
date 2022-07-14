@@ -1,0 +1,39 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Define the background properties like color etc -->
+    <item android:id="@android:id/background">
+        <shape>
+            <solid
+               android:color="@color/cream" />
+
+            <stroke
+                android:color="@color/progress_accent"
+                android:width="1dp">
+            </stroke>
+
+            <corners
+                android:radius="8dp">
+
+            </corners>
+        </shape>
+    </item>
+
+    <!-- Define the progress properties like start color, end color etc -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid
+                    android:color="@color/progress_secondary"
+                    />
+                <stroke
+                    android:color="@color/progress_accent"
+                    android:width="1dp"/>
+
+                <corners
+                    android:radius="8dp">
+
+                </corners>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

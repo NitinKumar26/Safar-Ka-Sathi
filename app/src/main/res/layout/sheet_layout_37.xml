@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/colorBackground"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/museo700_regular"
+        android:gravity="center"
+        android:text="Invite Drivers"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="26sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/opensans_regular"
+        android:gravity="center"
+        android:text="Here we can explain the terms and conditions to invite drivers and the process."
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/thumb_1" />
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/museo300_regular"
+        android:gravity="center"
+        android:text="Earn 100 Points"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/opensans_regular"
+        android:gravity="center"
+        android:text="Per driver you invite"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/text_accept"
+        android:elevation="2dp"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:paddingLeft="70dp"
+        android:fontFamily="@font/museo700_regular"
+        android:paddingRight="70dp"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invite"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:backgroundTint="@color/btn_accept"
+        />
+
+
+</LinearLayout>
